@@ -1,0 +1,19 @@
+{
+  "name": "khait.net",
+  "version": "1.0.0",
+  "description": "I don't know what this should be",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js -e js,pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
