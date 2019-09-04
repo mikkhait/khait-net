@@ -1,13 +1,21 @@
 html
   head
     title= title
+    link(href='https://fonts.googleapis.com/css?family=Anonymous+Pro&display=swap' rel='stylesheet')
+    link(rel='stylesheet' type='text/css' href='css/style.css')
+    script(src='https://kit.fontawesome.com/b247512fb6.js')
+
   body
-    h1= message
-
-    a(href="https://www.linkedin.com/in/mkhait")  LinkedIn
-    br
-    a(href="https://github.com/mikkhait") Github
-    br
-    a(href="mailto:mkhait@gmai.com") Email
-
-    h2= "Bye now"
+    .container
+      p
+        a(href="https://www.linkedin.com/in/mkhait") Michael Khait
+        span  - Software / Architecture / Technology Consultant
+      p 
+        a(href="https://github.com/mikkhait") 
+          i.fab.fa-github
+        span  |  
+        a(href="https://twitter.com/mikkhait") 
+          i.fab.fa-twitter
+        span  |  
+        a(href="mailto:mkhait+khait@gmail.com") 
+          i.fas.fa-at
