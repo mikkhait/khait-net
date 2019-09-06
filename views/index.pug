@@ -5,14 +5,21 @@ html
     link(rel='stylesheet' type='text/css' href='css/style.css')
     script(src='js/main.js')
     script(src='https://kit.fontawesome.com/b247512fb6.js')
+    script(src='https://www.googletagmanager.com/gtag/js?id=UA-5783918-3')
+    script
+      include ga.js
+
+
 
   body
     .container
-      p
-        a(href="https://www.linkedin.com/in/mkhait") Michael Khait
+      p Michael Khait
         span  - Software / Architecture / Technology 
         span#slow Consultant
       p.center
+        a(href="https://linkedin.com/in/mkhait")
+          i.fab.fa-linkedin 
+        span  |  
         a(href="https://github.com/mikkhait") 
           i.fab.fa-github
         span  |  
