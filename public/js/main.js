@@ -4,16 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function unfade(el) {
-    let op = 0.01; // initial opacity
+    let op = 0;
     el.style.display = 'none';
+    el.style.opacity = op;
+    el.style.filter = `alpha(opacity=${op * 100})`;
 
+    const intervalDuration = 50;
+    el.style.display = 'inline';
     let timer = setInterval(() => {
-        el.style.display = 'inline';
         if (op >= 1) {
             clearInterval(timer);
         }
-        el.style.opacity = op;
-        el.style.filter = 'alpha(opacity=' + op * 100 + ')';
         op += op * 0.1;
-    }, 50);
+        el.style.opacity = op;
+        el.style.filter = `alpha(opacity=${op * 100})`;
+    }, intervalDuration);
 }
