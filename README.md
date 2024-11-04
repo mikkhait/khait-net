@@ -9,6 +9,8 @@ khait.net is on Google Domains
 2. Authenticate with Google Cloud SDK `gcloud auth login`
 3. Set default project `gcloud config set project khait-personal`
 4. Run `gcloud app deploy`
+5. View at https://khait-personal.uc.r.appspot.com
+6. GCP Console: https://console.cloud.google.com/appengine/versions?project=khait-personal
 
 
 # How to run locally
@@ -17,3 +19,4 @@ khait.net is on Google Domains
 2. install nodemon
 3. npm install
 4. npm dev
+5. View at http://localhost:8080
